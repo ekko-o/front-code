@@ -1,0 +1,171 @@
+.w {
+  width: 1240px;
+  margin: 0 auto;
+}
+/* 网页的头部 */
+/* 1.1快捷导航部分 */
+
+.shortcut {
+    height: 52px;
+    background-color: #333;
+}
+.shortcut ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 52px;
+}
+.shortcut li a {
+    color: #fff;
+}
+/* 1.2 快捷导航鼠标悬停效果 */
+.shortcut li a:hover {
+    color: #5EB69C;
+}
+.shortcut .line {
+    width: 1px;
+    height: 12px;
+    background-color: #999;
+    margin: 0 15px;
+}
+.shortcut li i {
+    font-size: 16px;
+    margin-right: 4px;
+}
+/* 修改第一个li里面的a的颜色为#5EB69C */
+.shortcut li:first-child a {
+    color: #5EB69C;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    height: 132px;
+}
+.header .logo {
+    width: 200px;
+    height: 88px;
+    background-color: #5EB69C;
+}
+.header .logo h1 {
+    width: 100%;
+    height: 100%;
+}
+.header .logo h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/logo.png);
+    text-indent: -9999px;
+    overflow: hidden;
+}
+.nav {
+    display: flex;
+    gap: 48px;
+}
+.nav li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+}
+.nav li a:hover {
+    color: #5EB69C;
+    border-bottom: 2px solid #5EB69C;
+}
+.search input {
+    width: 170px;
+    height: 40px;
+    border-bottom: 2px solid #F4F4F4;
+    padding-left: 28px;
+}
+.search input::placeholder {
+    font-size: 16px;
+    color: #999;
+}
+header .car i{
+   font-size: 24px;
+   margin-right: 12px;
+}
+
+/* 网页的底部 */
+.footer{
+    background-color: #F5F5F5;
+}
+.w .slogan {
+    height: 178px;
+    border-bottom: 1px solid #E8E8E8;
+}
+.slogan ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 178px;
+}
+.slogan ul li{
+    display: flex;
+    align-items: center;
+}
+.slogan ul li h5{
+    width: 58px;
+    height: 58px;
+    background: url(../images/sprite.png);
+}
+.slogan ul li p{
+    font-size: 28px;
+    margin-left: 20px;
+}
+.slogan ul li .two {
+    background-position: 0 -58px;
+}
+.slogan ul li .three {
+    background-position: 0 -116px;
+}
+.slogan ul li .four {
+    background-position: 0 -174px;
+}
+.service{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.service-left{
+    display: flex;
+    gap: 84px;
+}
+.service-left dt{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.service-left dd{
+    margin-bottom: 10px;
+}
+.service-left dd a{
+    font-size: 16px;
+    color: #969696;
+}
+.service-left dd a i{
+    color: #5EB69C;
+}
+.service-right ul {
+    display: flex;
+    text-align: center;
+}
+.service-right ul li{
+    margin-left: 55px;
+    color: #969696;
+}
+.service-right ul li p{
+    margin-top: 10px;
+}
+/* 版权模块 */
+.copyright{
+    text-align: center;
+    margin-top: 100px;
+    line-height: 30px;
+    color: #A1A1A1 ;
+}
+.copyright a{
+    font-size: 16px;
+    color: #A1A1A1;
+}
