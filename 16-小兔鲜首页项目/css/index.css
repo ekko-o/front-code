@@ -1,0 +1,203 @@
+.entry {
+  height: 500px;
+  background-color: #f5f5f5;
+}
+.entry .w {
+  height: 100%;
+  background: url(../uploads/banner1.png) no-repeat center center;
+}
+.category {
+  width: 250px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+.category ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding-left: 29px;
+  padding-right: 12px;
+  color: #fff;
+}
+.category ul li:hover {
+  background-color: #00be9a;
+}
+.category ul li a {
+  color: #fff;
+  font-size: 14px;
+}
+.category ul li a:first-child {
+  font-size: 16px;
+  margin-right: 14px;
+}
+/* 新鲜好物模块 */
+.box-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 112px;
+}
+.box-head h2 {
+  font-size: 30px;
+}
+.box-head h2 small {
+  font-size: 16px;
+  margin-left: 30px;
+  color: #a1a1a1;
+  font-weight: 400;
+}
+.box-head a {
+  font-size: 16px;
+  color: #a1a1a1;
+}
+.box-two ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 404px;
+}
+.box-two ul li {
+  width: 304px;
+  height: 404px;
+  background-color: #eef9f4;
+}
+.box-two ul li img {
+  width: 304px;
+  height: 304px;
+}
+.box-two ul li .title {
+  font-size: 20px;
+  color: #333333;
+  margin: 18px 0 8px 0;
+  padding: 0 25px;
+  /* 单行文字超出部分省略号 */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.box-two ul li .price {
+  font-size: 22px;
+  color: #aa2113;
+  margin-bottom: 15px;
+}
+.box-two ul li .price small {
+  font-size: 22px;
+}
+.box-two ul li a {
+  display: block;
+  height: 100%;
+}
+.hot .box-two ul li {
+  width: 304px;
+  height: 404px;
+  background-color: #ffffff;
+}
+.hot {
+  margin-bottom: 60px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 102px;
+  padding-top: 10px;
+}
+.head .head-right {
+  display: flex;
+}
+.head h2 {
+  font-size: 30px;
+}
+.head .head-right > a {
+  font-size: 16px;
+  color: #a1a1a1;
+}
+.head .head-right ul {
+  display: flex;
+  gap: 10px;
+  margin-right: 60px;
+}
+.head .head-right ul li a {
+  padding: 2px 8px;
+}
+.head .head-right ul li a:hover {
+  font-size: 16px;
+  background-color: #00be9a;
+  color: #ffffff;
+  /* 添加圆角 */
+  border-radius: 10px;
+}
+.body {
+  display: flex;
+  justify-content: space-between;
+}
+.body .body-left {
+  width: 248px;
+  height: 610px;
+  background-color: #ffffff;
+}
+.body .body-right {
+  display: flex;  
+  width: 968px;
+  height: 610px;
+  background-color: #ffffff;
+  /* 实现换行 */
+  flex-wrap: wrap;
+}
+.body .body-right li {
+  width: 242px;
+  height: 305px;
+  padding: 10px 21px 0;
+}
+.body .body-right li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 19px;
+}
+.body .body-right li img {
+  width: 200px;
+  height: 180px;
+}
+.body .body-right li .title {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.body .body-right li .price {
+  font-size: 22px;
+  color: #af2f22;
+  margin-top: 12px;
+}
+.body .body-right li .price small {
+  font-size: 22px;
+}
+/* 单行文本溢出省略号写一个新的类名 */
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.new ul{
+    display: flex;
+    gap: 12px;
+}
+.new ul li{
+    flex: 1;
+    height: 355px;
+}
+.new ul li img{
+    width: 100%;
+}
+.new ul li .con{
+    display: flex;
+    height: 67px;
+    padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #666666;
+}
+.new .con .like {
+    margin-right: 20px;
+}
