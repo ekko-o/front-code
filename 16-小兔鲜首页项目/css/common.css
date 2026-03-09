@@ -29,8 +29,13 @@
     margin: 0 15px;
 }
 .shortcut li i {
+    display: inline-block;
     font-size: 16px;
     margin-right: 4px;
+}
+.shortcut .phone:hover i {
+    transition: all 0.5s;
+    transform: rotate(360deg);
 }
 /* 修改第一个li里面的a的颜色为#5EB69C */
 .shortcut li:first-child a {
@@ -38,10 +43,14 @@
 }
 
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;   
     height: 132px;
+    background-color: #fff;
 }
 .header .logo {
     width: 200px;
@@ -83,11 +92,36 @@
     font-size: 16px;
     color: #999;
 }
+.search {
+    position: relative;
+}
+.search i{
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    font-size: 22px;
+    color: #999;
+}
 header .car i{
    font-size: 24px;
    margin-right: 12px;
 }
-
+header .car {
+    position: relative;
+}
+header .car span{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #E26237;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #fff;
+}
 /* 网页的底部 */
 .footer{
     background-color: #F5F5F5;
