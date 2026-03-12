@@ -1,0 +1,159 @@
+:root {
+    --text1: #121826;
+    --text2: #3c3e42;
+    --text3: #848484;
+    --text4: #c3c3c5;
+    --text-green: #16c2a3;
+    --padding15: 0.4rem;
+}
+
+.body {
+    padding-top: 1.1733rem;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    height: 1.1733rem;
+    text-align: center;
+    line-height: 1.1733rem;
+    background-color: #fff;
+    /* 添加阴影效果 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar .back {
+    padding-left: var(--padding15);
+    height: 1.1733rem;
+    color: #000;
+}
+
+.nav-bar .back i {
+    font-size: 0.48rem;
+}
+
+.nav-bar .register {
+    font-size: 0.4533rem;
+    color: var(--text-green);
+    margin-right: var(--padding15);
+}
+
+.login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-end;
+    padding: 0.6667rem var(--padding15) 1.2rem;
+}
+
+.login-header h1 {
+    font-size: 0.64rem;
+    color: var(--text1);
+    font-weight: 500;
+}
+
+.login-header a {
+    color: var(--text2);
+    font-size: 0.4rem;
+}
+
+.login-header a i {
+    font-size: 0.5067rem;
+}
+
+.login-form {
+    padding: 0 var(--padding15);
+}
+
+.login-form .row {
+    position: relative;
+    padding: var(--padding15) 0;
+    border-bottom: 1px solid #ededede5;
+}
+
+.login-form .row input {
+    font-size: 0.3733rem;
+}
+
+.login-form .row input::placeholder {
+    color: var(--text4);
+}
+
+.login-form .row img {
+    position: absolute;
+    top: 0.48rem;
+    right: var(--padding15);
+    width: var(--padding15);
+    height: var(--padding15);
+}
+
+.login-form .agree {
+    border-bottom: 0;
+    font-size: 0.3467rem;
+    color: var(--text2);
+}
+
+.login-form .agree i {
+    font-size: var(--padding15);
+    color: var(--text4);
+}
+
+.login-form .agree a {
+    color: var(--text-green);
+}
+
+.login-btn {
+    display: block;
+    width: 100%;
+    height: 1.1733rem;
+    border-radius: 0.5867rem;
+    background-color: #fafafa;
+    font-size: .4267rem;
+}
+
+.forget {
+    padding-top: 0.4rem;
+    text-align: center;
+}
+
+.forget a {
+    font-size: 0.3733rem;
+    color: var(--text3);
+}
+
+.third-login {
+    width: 5.3333rem;
+    margin: 2.3333rem auto 1.8667rem;
+    text-align: center;
+}
+
+.third-login p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.32rem;
+    height: 0.48rem;
+    color: var(--text4);
+}
+
+.third-login p::before,
+.third-login p::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: var(--text4);
+}
+
+.third-login a {
+    display: inline-block;
+    margin-top: var(--padding15);
+}
+
+.third-login a img {
+    width: 0.8rem;
+    height: 0.8rem;
+}
