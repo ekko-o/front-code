@@ -1,0 +1,66 @@
+:root{
+   --vivo-blue: #1976d2;
+   --vivo-cyan: #00e5ff;
+   --vivo-purple: #7b1fa2;
+   --vivo-dark: #121212;
+   --vivo-card-bg: #1e1e1e;
+   --neon-glow: 0 0 10px rgba(0, 229, 255, 0.7),
+     0 0 20px rgba(0, 229, 255, 0.5),
+     0 0 30px rgba(0, 229, 255, 0.3);
+}
+body{
+    font-family: 'Monsterrat','sans-serif';
+    background-color:  var(--vivo-dark);
+    color: #fff;
+    overflow-x: hidden;
+}
+/* 导航栏制作 */
+.navbar{
+    background-color: rgba(18, 18, 18, 0.95)!important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 15px 0;
+}
+.icons a{
+    font-size: 1.4rem;
+    color: rgba(255,255,255,0.9);
+    padding: 0 10px;
+}
+.icons a:hover{
+    color: var(--vivo-cyan);
+    text-shadow: var(--neon-glow);
+}
+.nav-link{
+    position: relative;
+    color: rgba(255,255,255,0.9);
+    margin: 0 12px;
+}
+.nav-link:hover{
+    text-shadow: var(--neon-glow);
+}
+.nav-link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(45deg, var(--vivo-cyan), var(--vivo-blue));
+    transition: width 0.3s ease-in-out;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+.navbar-brand,
+.navbar-brand:hover{
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(45deg, var(--vivo-cyan), var(--vivo-blue));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: var(--neon-glow);
+}
