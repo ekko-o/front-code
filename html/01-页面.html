@@ -1,11 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>hello world</h1>
-</body>
+    <style>
+      /* 让表格居中 */
+      table {
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+      }
+      table,
+      th,
+      td {
+        border-collapse: collapse;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>订单确认</h1>
+    <table>
+      <tr>
+        <th>商品名称</th>
+        <th>商品价格</th>
+        <th>商品数量</th>
+        <th>商品总价</th>
+        <th>收获地址</th>
+      </tr>
+      <tr>
+        <td>小米17</td>
+        <td id="price"></td>
+        <td id="num"></td>
+        <td id="totalPrice"></td>
+        <td id="address"></td>
+      </tr>
+    </table>
+    <script>
+      let price = prompt("请输入商品价格");
+      let num = prompt("请输入数量");
+      let address = prompt("请输入地址");
+      let totalPrice = price * num;
+      document.getElementById("price").innerHTML = price + "元";
+      document.getElementById("num").innerHTML = num;
+      document.getElementById("totalPrice").innerHTML = totalPrice;
+      document.getElementById("address").innerHTML = address;
+    </script>
+  </body>
 </html>
