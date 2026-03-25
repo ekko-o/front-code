@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        display: flex;
+        width: 500px;
+        height: 500px;
+        margin: 50px auto;
+        justify-content: space-around;
+        align-items: flex-end;
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
+        /* background-color: #549b7a; */
+      }
+      .item {
+        display: flex;
+        background-color: #549b7a;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+      }
+      .item span {
+        margin-top: -20px;
+      }
+      .item h4 {
+        margin-bottom: -30px;
+        width: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="item">
+        <span></span>
+        <h4>第1季度</h4>
+      </div>
+      <div class="item">
+        <span></span>
+        <h4>第2季度</h4>
+      </div>
+      <div class="item">
+        <span></span>
+        <h4>第3季度</h4>
+      </div>
+      <div class="item">
+        <span></span>
+        <h4>第4季度</h4>
+      </div>
+    </div>
+    <script>
+      let data = [];
+      for (let i = 0; i < 4; i++) {
+        let val = prompt(`请输入第${i + 1}季度数据 (例如: 200)`);
+        data.push(val);
+        let span = document.querySelector(`.item:nth-child(${i + 1}) span`);
+        span.innerText = data[i];
+        let item = document.querySelector(`.item:nth-child(${i + 1})`);
+        item.style.height = `${data[i]}px`;
+      }
+    </script>
+  </body>
+</html>

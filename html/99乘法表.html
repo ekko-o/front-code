@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        display: inline-block;
+        width: 75px;
+        margin: 5px 10px;
+        text-align: center;
+        border: 1px solid #000;
+        /* 线性渐变 */
+        background: linear-gradient(45deg, #549b7a, #fff);
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      for (let i = 1; i <= 9; i++) {
+        for (let j = 1; j <= i; j++) {
+          document.write(`<span>${i} *${j} =${i * j}</span>`);
+        }
+        document.write("<br>");
+      }
+    </script>
+  </body>
+</html>
